@@ -8,4 +8,7 @@ Features:
 3. Search the corresponding blockchains using API for any previous transaction histories.
 4. If there is any transaction history, the script then save the seed phrase, address and blockcahin name in the 'data.json' file.
 
+Library that have been used:
+pip install eth_account mnemonic bip32utils
+
 Feel free to share your thoughts for further improvement.
