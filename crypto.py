@@ -17,12 +17,12 @@ def append_to_json(file_path, data):
         json.dump(existing_data, json_file)
 
 # File path of the JSON file
-file_path = 'E:\Python Workspace\crypto\data.json'
+file_path = 'data.json'
 
 
 def check_transactions(address):
     # Replace 'YOUR_API_KEY' with your Etherscan API key
-    api_eth = '7WKM5ZPIIM5MRNRHQA5HDFTSBP23HUS4JJ'
+    api_eth = 'YOUR_API_KEY'
     # Construct the API endpoint URL
     url = f"https://api.etherscan.io/api?module=account&action=txlist&address={address}&startblock=0&endblock=99999999&sort=asc&apikey={api_eth}"
 
@@ -48,7 +48,7 @@ def check_transactions(address):
 
 
 def check_address_transactions(address):
-    api_bsc= "TYSVVF3AXE45TXJ9DAX9KDYSSEP4JCRBGS"
+    api_bsc= "YOUR_API_KEY"
     api_url = f"https://api.bscscan.com/api?module=account&action=txlist&address={address}&startblock=0&endblock=99999999&sort=asc&apikey={api_bsc}"
 
     try:
